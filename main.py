@@ -3,7 +3,7 @@ import subprocess
 import os
 
 TOKEN = "BOTのTOKEN"
-SERVER_PATH = "サーバーファイルのパス"
+SERVER_PATH = r"サーバーファイルのパス"
 
 intents = discord.Intents.default()
 intents.message_content = True
