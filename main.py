@@ -1,7 +1,6 @@
 import discord
 import subprocess
 import os
-from keep_alive import keep_alive
 
 TOKEN = "BOTのTOKEN"
 SERVER_PATH = "サーバーファイルのパス"
@@ -33,7 +32,6 @@ async def on_message(message):
 def start_server():
     return subprocess.Popen([SERVER_PATH])
 
-keep_alive()
 def stop_server(process):
     process.terminate()  # サーバープロセスを終了
 
