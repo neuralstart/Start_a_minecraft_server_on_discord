@@ -33,6 +33,6 @@ def start_server():
     return subprocess.Popen([SERVER_PATH])
 
 def stop_server(process):
-    process.terminate()  # サーバープロセスを終了
+    process.terminate() 
 
 client.run(TOKEN)
